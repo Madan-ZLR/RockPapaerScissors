@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamePage</title>
+    <link rel="stylesheet" href="./Gamepage.css">
+
+</head>
+
+<body>
+    <div id="gamestart">
+        <div class="HvsC">
+            <div>
+                <div id="HBar">HP-100%</div>
+                <img src="./images/manlogo.jpg" alt="Man-Logo" class="hc"><br>
+                <h2 style="color:#00c52b">Human</h2>
+            </div>
+            <div style="font-size:200px;color:#e5e7eb;text-align: center;">
+                vs
+            </div>
+            <div>
+                <div id="CBar">HP-100%</div>
+                <img src="./images/Robologo.jpeg" alt="robo-Logo" class="hc">
+                <h2 style="color:#ff0000">Computer</h2>
+            </div>
+        </div>
+
+        <div class="stats">
+            <h2>Total Attacks : 5 </h2>
+            <h2>left attacks : 5</h2>
+        </div>
+
+        <div class="weapons">
+            <ul type="none">
+                <li>
+                    <img src="./images/stone1logo.jpg" alt="Stone-logo" onclick="attack(2)" class="weapon">
+                </li>
+                <li>
+                    <img src="./images/paperlogo.jpg" alt="Paper-logo" onclick="attack(1)" class="weapon">
+                </li>
+                <li>
+                    <img src="./images/scissorslogo.jpg" alt="scissorslogo" onclick="attack(0)" class="weapon">
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <script defer src="./Game.js"></script>
+</body>
+
+</html>
