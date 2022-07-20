@@ -36,7 +36,6 @@ function computerChoice() {
 
 function attack(hchoice) {
     var cChoice = computerChoice();
-    alert("CcHOICE : " + cChoice);
     if (hchoice == cChoice) {
         HPBar();
     } else {
@@ -44,9 +43,19 @@ function attack(hchoice) {
             if (hchoice == 2) {
                 cah--;
                 HPBar();
+                if (cah == 0 || hah == 0) {
+                  
+                    getWinner();
+
+                }
             } else {
                 hah--;
                 HPBar();
+                if (cah == 0 || hah == 0) {
+                   
+                    getWinner();
+
+                }
             }
 
         } else {
@@ -54,18 +63,38 @@ function attack(hchoice) {
                 if (hchoice == 0) {
                     cah--;
                     HPBar();
+                    if (cah == 0 || hah == 0) {
+                        
+                        getWinner();
+
+                    }
                 } else {
                     hah--;
                     HPBar();
+                    if (cah == 0 || hah == 0) {
+                       
+                        getWinner();
+
+                    }
                 }
             } else {
                 if (cChoice == 2) {
                     if (hchoice == 1) {
                         cah--;
                         HPBar();
+                        if (cah == 0 || hah == 0) {
+                            
+                            getWinner();
+
+                        }
                     } else {
                         hah--;
                         HPBar();
+                        if (cah == 0 || hah == 0) {
+                            
+                            getWinner();
+
+                        }
                     }
 
                 }
@@ -74,15 +103,30 @@ function attack(hchoice) {
     }
 }
 
-function getWinner(){
-    Obj=document.body;
-    let div=document.createElement('div');
-    div.
-}
-
-var completegame=setInterval(function() {
-    if(cah==0 || hah==0){
-        getWinner();
-        clearInterval(completegame);    
+function getWinner() {
+    
+    let div = document.getElementById('winner');
+    var h1 = document.querySelector('#winner h1');
+    var h3=document.createElement('h3');
+    h3.innerHTML='<a href="./Home.html" target="blank">Try Again</a>';
+    var gret = document.querySelector('#winner h2');
+    if (cah == 0) {
+        alert("called");
+        h1.innerHTML = "BooYah....";
+        document.getElementById('winnerimg').src = "./images/manlogo.png";
+        gret.innerHTML = "Congratulation Human Wons this FIGHT";
+        div.appendChild(h1);
+        div.appendChild(gret);
+        div.appendChild(h3);
+        div.style.display="block";
+    } else {
+        alert("called");
+        h1.innerHTML = "Failed";
+        document.getElementById('winnerimg').src ="./images/mancrying.jpg";
+        gret.innerHTML = "Better Luck Next Time !";
+        div.appendChild(h1);
+        div.appendChild(gret);
+        div.appendChild(h3);
+        div.style.display="block";
     }
-    }, 1000);
+}
