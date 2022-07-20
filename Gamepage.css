@@ -70,13 +70,13 @@ ul {
 }
 
 .stats {
-    width: 200px;
+    width: 210px;
     height: 110px;
     background-color: #1f2937;
     color: #e5e7eb;
     font-weight: bold;
     margin: 40px 0px 0px 100px;
-    padding: 5px;
+   
 }
 
 #winner {

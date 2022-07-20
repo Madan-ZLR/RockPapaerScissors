@@ -29,13 +29,14 @@ function HPBar() {
 
 }
 
-
+//this function genarates compueter choice 
 function computerChoice() {
     let value = Math.floor((Math.random() * 10));
     console.log(value);
     return value % 3;
 }
 
+// this function picks up weapon
 function getWeaponani(H,C){
    document.getElementById('hwapon').src=weapons[H];
    document.getElementById('cwapon').src=weapons[C];
@@ -46,7 +47,7 @@ function getWeaponani(H,C){
 }
 
 
-
+// the below function perform attacking operations and some more functionality
 function attack(hchoice) {
     var cChoice = computerChoice();
     getWeaponani(hchoice,cChoice);
@@ -112,8 +113,8 @@ function attack(hchoice) {
     }
 }
 
+// The Below function shows final result
 function getWinner() {
-
     let div = document.getElementById('winner');
     var h1 = document.querySelector('#winner h1');
     var h3 = document.createElement('h3');
