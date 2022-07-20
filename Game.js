@@ -117,7 +117,7 @@ function getWinner() {
     let div = document.getElementById('winner');
     var h1 = document.querySelector('#winner h1');
     var h3 = document.createElement('h3');
-    h3.innerHTML = '<a href="./Home.html" target="blank">Try Again</a>';
+    h3.innerHTML = '<a href="./index.html" target="blank">Try Again</a>';
     var gret = document.querySelector('#winner h2');
     if (hah > cah) {
         h1.innerHTML = "BooYah....";
