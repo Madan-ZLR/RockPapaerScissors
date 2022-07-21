@@ -141,7 +141,7 @@ function getWinner() {
         } else {
             h1.innerHTML = "Game Tied";
             document.getElementById('winnerimg').src = "./images/tie.jpg";
-            gret.innerHTML = "Human and Both can Survive in This World !";
+            gret.innerHTML = "Human and Robot Both can Survive in This World !";
             div.appendChild(h1);
             div.appendChild(gret);
             div.appendChild(h3);
