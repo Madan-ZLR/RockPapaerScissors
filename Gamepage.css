@@ -1,17 +1,18 @@
 .HvsC {
-    
-    width: 1600px;
+
+    width: 80%;
+    height: 40%;
     display: flex;
     justify-content: space-between;
-    margin: 30px 20px 0px 100px;
+    margin: 1% 2% 0% 6%;
 
 }
 
 #HBar,
 #CBar {
-    height: 30px;
+   
     width: 100%;
-    font-size: 24px;
+    font-size: 20px;
     color: #1f2937;
     border: #e5e7eb;
     font-weight: bold;
@@ -20,15 +21,15 @@
 }
 
 .HvsC>div {
-    border: 2px solid black;
-    width: 400px;
-    height: 300px;
+
     background-color: #1f2937;
+    width: 22vw;
+    height: 27%;
 }
 
 .hc {
-    width: 240px;
-    height: 200px;
+    width: 10vw;
+    height: 11vw;
 }
 
 ul {
@@ -37,87 +38,88 @@ ul {
 }
 
 #fight {
-    width: 1300px;
-    height: 170px;
- 
-    position: absolute;
-    margin-top: -155px;
-    margin-left: 350px;
+    width: 66vw;
+    height: 9vw;
+    position: relative;
+    margin-top: -6vw;
+    margin-left: 20vw;
     display: flex;
-    padding: 5px 20px 0px 20px;
     justify-content: space-between;
 }
 
 #HW,
 #CW {
-    width: 150px;
-    height: 150px;
+
+    width: 100%;
+    height: auto;
 }
 
 .weapons {
-    width: 1100px;
-    height: 350px;
+    width: 72vw;
+    height: 19vw;
     background-color: #1f2937;
-
-    padding: 35px 30px 20px 0px;
-    margin: 30px 0px 0px 350px;
+    padding:2vw;
+    margin: 1% 0% 0% 14%;
 }
 
 .weapon {
-    width: 250px;
-    height: 250px;
+    width: 14vw;
+    height: 14vw;
     border: 1px solid #e5e7eb;
 }
 
 .stats {
-    width: 210px;
-    height: 110px;
+
+    width: 14vw;
+    height: 6vw;
     background-color: #1f2937;
+    font-size: 50%;
     color: #e5e7eb;
     font-weight: bold;
-    margin: 40px 0px 0px 100px;
-   
+    margin: 1% 0% 0% 5%;
+
 }
 
 #winner {
-    width: 850px;
-    height: 550px;
+    display:none;
+    width: 45%;
+    height: 60%;
     border: 5px solid whitesmoke;
     text-align: center;
     color: aqua;
     position: absolute;
-    margin-top: 200px;
-    margin-left: 600px;
+    margin-top: 14%;
+    margin-left: 30%;
     background-color: #1f2937;
-    border-radius: 40px 100px 40px 100px;
-    display: none;
+    border-radius: 15% 8% 15% 8%;
+
 }
 
 #winner>h1 {
-    font-size: 58px;
+    font-size: 6vw;
 }
 
-#winner> {
-    font-size: 40px;
+#winner> h3,#winner> h3{
+    font-size: 4vw;
 }
 
 #winnerimg {
     border: 2px solid #f5f5f5;
-    border-radius: 10px 25px 10px 25px;
-    width: 200px;
-    height: 200px;
-    margin-top: 50px;
+    border-radius: 5% 10% 5% 10%;
+    width: 20%;
+    height: 20%;
+    margin-top: 3vw;
 
 }
 
 .weapon:hover {
-    width: 300px;
-    height: 300px;
+    width: 16vw;
+    height:16vw;
     border: 5px solid #0366f0;
 }
 
 a {
-    font-size: 30px;
+    font-size: 35%;
     color: aqua;
     text-decoration: none;
 }
@@ -136,23 +138,26 @@ a {
         transform: rotate(359deg);
     }
 }
-
+#TA,#LA{
+font-size: 1.5vw;
+}
 #hwapon,
 #cwapon {
-    width: 150px;
-    height: 150px;
+    width: 8vw;
+    height: 8vw;
+
 }
 
 
 .hani {
 
-    animation: man 3s 1;
+    animation: man 3s infinite;
     position: relative;
     animation-direction: alternate;
 }
 
 .cani {
-    animation: com 3s 1;
+    animation: com 3s infinite;
     position: relative;
     animation-direction: alternate;
 }
@@ -164,7 +169,7 @@ a {
     }
 
     50% {
-        left: 500px;
+        left: 40%;
         top: 0px;
     }
 
@@ -181,7 +186,7 @@ a {
     }
 
     50% {
-        right: 500px;
+        right: 40%;
         top: 0px;
     }
 
